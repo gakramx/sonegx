@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "#################################"
+echo "Start sonegx-before"
+echo "#################################"
+
+echo "Populate Core Team keys"
+echo "#################################"
+pacman-key --init
+pacman-key --populate
+
+echo "Changing into our own linux.preset"
+echo "#################################"
+mv /etc/mkinitcpio.d/sonegx /etc/mkinitcpio.d/linux.preset
+
+echo "#################################"
+echo "End sonegx-before"
+echo "#################################"
+rm /usr/local/bin/sonegx-before
