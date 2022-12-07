@@ -49,7 +49,8 @@ less
 lftp
 libfido2
 libusb-compat
-linux
+linux-rt-lts
+linux-rt-lts-headers
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -122,7 +123,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-
+plymouth
 #Sonegx Desktop
 
 sddm
@@ -144,7 +145,30 @@ sonegx-mirrorlist
 sonegx-system-installation
 os-prober
 
+#Audio
+alsa-plugins
+lib32-alsa-plugins
+
+jack2
+jack2-dbus
+lib32-jack2
+
+
+pulseaudio
+pulseaudio-alsa
+pulseaudio-jack
+
+cadence
+carla
+sonegx-linuxsampler
+qsampler
+
+wine
+wineasio
+
 #Software
+anydesk-bin
+
 git
 base-devel
 yay-bin
